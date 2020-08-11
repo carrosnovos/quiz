@@ -1,0 +1,112 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <title>Carro dos Sonhos</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styling_quiz.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        
+        <!-- Facebook Pixel Code -->
+            <script>
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '1182490918795512');
+            fbq('track', 'PageView');
+            </script>
+            <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1182490918795512&ev=PageView&noscript=1"
+            /></noscript>
+        <!-- End Facebook Pixel Code -->
+        
+        <!--   CÓDIGO    -->
+        <script>
+            window.onload = () => {
+                let pageLinks = document.querySelectorAll('a');
+                        pageLinks.forEach(elem => {
+                    let href = elem.href;
+                            if (href === undefined || href.indexOf("#") >= 0 || href.indexOf("api.whatsapp") >= 0) return true;
+                            let search_params = document.location.search.replace('?', '');
+                            elem.href = href + (href.indexOf("?") > 0 ? '&' : '?') + search_params.toString();
+                        });
+                    }
+        </script>
+        <!--  END CÓDIGO    -->
+        
+    </head>
+    
+    <body>
+        <div class="container">
+        
+            <div id="header">
+                <h1>CARROS DOS SONHOS</h1>
+                <p>Descubra se você tem direito a nunca mais pagar <strong>IPVA</strong> e <strong>30% de desconto</strong> em carros Zero</p>                
+            </div>
+            <div id="image">
+                <img src="images/Corola-adv-1-1.jpg">
+            </div>
+            <div id="quiz">
+                <p>Clique abaixo em uma das opções que você, parente ou amigos próximos tenham:</p>                
+                
+                <button class="questions" onclick="poupup();">Qualquer problema em alguma articulação, pernas, mãos e braços, ossos, nervos ou coluna</button>
+                
+                <button class="questions" onclick="poupup();">Problemas cardíacos, respiratórios ou qualquer tipo de síndrome</button>
+                
+                <button class="questions" onclick="poupup();">Acidente com sequela, amputação, próteses, qualquer Cirurgia ou lesão</button>
+                
+                <button class="questions" onclick="poupup();">Doenças neurológicas, degenerativas, renais</button>
+                
+                <button class="questions" onclick="poupup();">Autismo, Síndrome de Down, Parkison, Diabetes, AVC, Câncer</button>
+                
+                <button class="questions" onclick="poupup();">Formigamentos, lesão esforço repetitivo, tendinite ou qualquer deficiência visual</button>
+                
+                <button class="questions" onclick="poupup();">Qualquer deficiência que impeça ou gere qualquer dificuldade ao dirigir.</button>
+            
+            </div>
+            <div id="text">
+                <div id="txtTittle">
+                    <p><strong>ATENÇÃO!</strong></p>
+                    <p>Se você não encontrou nada nas Patologias acima não se preocupe.</p>
+                </div>
+                <div id="txtTxt">
+                    Mesmo que o seu problema não esteja aqui, se você, amigos e parentes próximos tiverem qualquer doença ou deficiência que impeça ou gere dificuldades para dirigir, sejam elas físicas, mentais, sensoriais ou intelectuais, adquira o guia Carro dos Sonhos para entender como você pode se enquadrar e também ter este direito.
+                </div>
+            
+            </div>
+            <button class="button">
+                <div id="button">
+                    <a href="https://go.perfectpay.com.br/PPU38CK5U4R">CLIQUE AQUI PARA MAIS INFORMAÇÕES</a>            
+                </div>
+            </button>       
+        </div> 
+        
+        <div id="ppBG"></div>
+        
+        <div id="poupUp">
+            <div id="ppTit">PARABÉNS!</div>
+            <div id="ppText">
+                <p>Você tem direito ao benefício à isenção do IPVA e o desconto na compra de um carro novo.</p>
+                <br />
+                <p>[ Aguarde um momento... ]</p>
+            </div>
+        </div>
+        
+        <script>      
+            function poupup(){
+//                window.alert("clicou!");
+                document.getElementById("ppBG").style.display = "block";
+                document.getElementById("poupUp").style.display = "block";
+                
+                setInterval(function(){
+                    window.location.href = "https://go.perfectpay.com.br/PPU38CK5U4R";
+                }, 10000);
+            }
+        </script>
+    </body>
+    
+</html>
