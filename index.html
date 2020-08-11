@@ -3,8 +3,7 @@
     <head>
         <title>Carro dos Sonhos</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="styling_quiz.css">
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/styling_quiz.css">
         
         <!-- Facebook Pixel Code -->
             <script>
@@ -48,7 +47,7 @@
                 <p>Descubra se você tem direito a nunca mais pagar <strong>IPVA</strong> e <strong>30% de desconto</strong> em carros Zero</p>                
             </div>
             <div id="image">
-                <img src="https://djivangross.com/md/images/carrosnovos/Corola-adv-1-1.jpg">
+                <img src="images/Corola-adv-1-1.jpg">
             </div>
             <div id="quiz">
                 <p>Clique abaixo em uma das opções que você, parente ou amigos próximos tenham:</p>                
@@ -98,9 +97,15 @@
         
         <script>      
             function poupup(){
-//                window.alert("clicou!");
+//                window.alert("clicou!");               
+                
                 document.getElementById("ppBG").style.display = "block";
                 document.getElementById("poupUp").style.display = "block";
+                
+                //reposiciona
+                document.getElementById("poupUp").style.marginTop = '-' + document.getElementById("poupUp").offsetHeight / 2 + 'px';
+                
+                document.getElementById("poupUp").style.marginLeft = '-' + document.getElementById("poupUp").offsetWidth / 2 + 'px';
                 
                 setInterval(function(){
                     window.location.href = "https://go.perfectpay.com.br/PPU38CK5U4R";
