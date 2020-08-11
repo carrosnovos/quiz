@@ -1,0 +1,203 @@
+*{
+    box-sizing: border-box; 
+/*    padding: 0px;*/
+    margin: 0px;
+}
+
+body{
+    background-color: #F3F3F8;
+    -webkit-background-color: #F3F3F8;
+    -o-background-color: #F3F3F8;
+    -moz-background-color: #F3F3F8;
+    
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #444444;   
+}
+
+.container{
+    display: flex;
+/*    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    text-align: left;
+    line-height: 2.2em;
+/*    letter-spacing: 1px;*/
+    flex-direction: column;
+}
+#header{
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 1.5em;
+    justify-content: center;
+    text-align: center;  
+}
+#header h1{
+/*    display: flex;*/
+    flex: 100%;
+/*    justify-content: center;*/
+    padding: 20px 0;
+      background: linear-gradient(#6f56ff, #23b2ff);
+    background: -webkit-linear-gradient(#6f56ff, #23b2ff);
+    background: -o-linear-gradient(#6f56ff, #23b2ff);
+    background: -moz-linear-gradient(#6f56ff, #23b2ff);
+    color: white;
+}
+#header p{
+    flex: 100%;  
+    padding: 10px 0;
+}
+#header p:nth-child(2){
+    background-color: gray;
+    color: white;
+}
+
+#image{
+    display: flex;
+    flex: 1;
+    justify-content: center;    
+}
+
+#image img{
+    max-width: 500px;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+#quiz{
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 1.5em;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 10px;
+}
+#quiz p{
+    padding-bottom: 15px;
+}
+
+.questions{
+    display: flex;
+    flex: 100%;
+    flex-wrap: wrap;
+    background-color: white;
+    border: 1px black dotted;
+    border-radius: 10px;
+    box-shadow: 0px 3px 3px ;
+    justify-content: center;
+    padding: 10px 10px; 
+    margin: 5px 0;
+    min-height: 70px;
+    align-items: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: #444444;
+    cursor: pointer;
+}
+.questions:active{
+    background-color: lightgreen;
+}
+
+#text{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    border-radius: 10px;
+}
+#text #txtTittle{
+    flex: 100%;
+    background-color: red;
+    border-radius: 10px 10px 0px 0px;
+    border: 1px black solid;
+    padding: 10px;
+    line-height: 1.5em;
+    color: white;
+    text-align: center;
+}
+#txtTxt{
+    flex: 100%;
+    border-radius: 0px 0px 10px 10px;
+    border: 1px black solid;
+    padding: 10px;
+    line-height: 1.5em;
+    text-align: center;    
+}
+
+.button{
+    display: flex;
+    background: linear-gradient(#FFFE66, #FFA134);
+    background: -webkit-linear-gradient(#FFFE66, #FFA134);
+    background: -o-linear-gradient(#FFFE66, #FFA134);
+    background: -moz-linear-gradient(#FFFE66, #FFA134);
+/*    width: 95%;*/
+/*    height: 100px;*/
+    font-size: 1em;
+    font-weight: 500;
+    border-color: black;
+    border-style:solid;
+    border-radius: 10px;
+    border-width: thin;
+    justify-content: center;
+    align-items: center;
+    text-shadow: #FFF 1px 1px 1px;
+    padding: 20px;
+    margin: 10px 10px 30px 10px;
+    cursor: pointer;
+}
+#button a{
+    text-decoration: none;
+    color: black;
+}
+
+#ppBG{
+    position: fixed;
+    top: 0;
+    left: 0;    
+    height: 100%;
+    width: 100%;
+    background-color: rgba( 0, 0, 0, 0.5 );
+    z-index: 1;
+    display: none;
+}
+
+#poupUp{
+/*    height: 200px;*/
+    width: 500px;
+/*    background: linear-gradient(#F3CA6B, #F3706C);*/
+    color: white;
+/*    font-size: 2.5em;*/
+    text-align: center;
+/*    text-transform: uppercase;*/
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -130px;
+    margin-left: -250px;
+    z-index: 2;
+    display: none;
+/*    border-radius: 10px 10px 10px 10px;*/
+}
+#ppTit{
+    display: flex;
+    border: 2px black solid;
+    border-bottom: none;
+    background-color: limegreen;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight:bold;
+    border-radius: 10px 10px 0px 0px;
+}
+#ppText{
+/*    display: flex;*/
+/*    flex-wrap: wrap;*/
+    border: 2px black solid;
+    border-top: none;
+    background-color: white;
+    color: #444444;
+    justify-content: center;
+    font-size: 18px;
+    padding: 20px 10px;
+    border-radius: 0px 0px 10px 10px;
+    height: 140px;
+}
