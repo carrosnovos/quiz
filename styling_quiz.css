@@ -160,24 +160,23 @@ img{
 }
 
 #poupUp{
+    display: flex;
+    flex-wrap: wrap;
 /*    height: 200px;*/
-    width: 400px;
-/*    background: linear-gradient(#F3CA6B, #F3706C);*/
+    width: 97%;
     color: white;
-/*    font-size: 2.5em;*/
     text-align: center;
-/*    text-transform: uppercase;*/
     position: fixed;
     top: 50%;
     left: 50%;
-    margin-top: -130px;
-    margin-left: -200px;
+/*    margin-top: -130px;*/
+/*    margin-left: -200px;*/
     z-index: 2;
     display: none;
-/*    border-radius: 10px 10px 10px 10px;*/
 }
 #ppTit{
     display: flex;
+    flex: 100%;
     border: 2px black solid;
     border-bottom: none;
     background-color: limegreen;
